@@ -1,4 +1,4 @@
-# NoXss  
+# Des-XSS
 
 ![found](https://img.shields.io/badge/found-200%2B%20xss-red)
 [![issues](https://img.shields.io/github/issues/lwzSoviet/NoXss)](https://github.com/lwzSoviet/NoXss/issues)
