@@ -5,7 +5,7 @@
 [![release](https://img.shields.io/badge/release-v1.0--beta-blue)](https://github.com/lwzSoviet/NoXss/releases)
 [![license](https://img.shields.io/github/license/lwzSoviet/NoXss)](https://github.com/lwzSoviet/NoXss/blob/master/LICENSE)
 
-NoXss is a cross-site script vulnerability scanner supported reflected xss and dom-based xss. It's very fast and suitable for testing millions of urls. It has found some xss vulnerabilities in Bug Bounty program. 
+Des-XSS is a cross-site script vulnerability scanner supported reflected xss and dom-based xss. It's very fast and suitable for testing millions of urls. It has found some xss vulnerabilities in Bug Bounty program. 
 # Features
 + Fast and suitable for testing millions of urls
 + Support Dom-based xss(use Chrome or Phantomjs) and reflected xss
