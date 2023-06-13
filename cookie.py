@@ -146,7 +146,7 @@ from pathlib import Path
 from config import COOKIE_DIR
 from log import LOGGER
 
-__author__ = 'longwenzhang'
+__author__ = 'DESTHUbb'
 
 def is_ip(domain):
     """Check if a domain is an IP address"""
