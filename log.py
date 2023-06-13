@@ -208,6 +208,12 @@ En resumen, este script es un controlador de registro especializado que proporci
 
 MEJORA Y ACTUALIZACION:
     
+#!/usr/bin/env python
+
+"""
+Output
+"""    
+    
 import logging
 import re
 import sys
