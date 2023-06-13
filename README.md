@@ -1,7 +1,6 @@
 # Des-XSS
 
 ![found](https://img.shields.io/badge/found-200%2B%20xss-red)
-[![issues](https://img.shields.io/github/issues/lwzSoviet/NoXss)](https://github.com/lwzSoviet/NoXss/issues)
 [![release](https://img.shields.io/badge/release-v1.0--beta-blue)](https://github.com/lwzSoviet/NoXss/releases)
 [![license](https://img.shields.io/github/license/lwzSoviet/NoXss)](https://github.com/lwzSoviet/NoXss/blob/master/LICENSE)
 
