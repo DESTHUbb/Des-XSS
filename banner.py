@@ -18,3 +18,22 @@ def banner():
 
 if __name__=='__main__':
     banner()
+    
+    
+    /////////////////////////////////////
+    #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+    @Description: Script to print a welcome message.
+    
+    ~~~~~~ 
+    @Author  : My Name
+    @Time    : 2023-06-13  10:00
+"""
+
+def welcome():
+    message = "Welcome to my Python script!"
+    print(message)
+
+if __name__ == '__main__':
+    welcome()
