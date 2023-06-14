@@ -61,13 +61,15 @@ Browser:Phantomjs or Chrome
 *If you want to scan use "--browser=chrome",you must install chrome mannually. You can use "--check" to test the installation.*  
 `python start.py --check`
 # Usage
-```
+```python
+
 python start.py --url url --save
 python start.py --url url --cookie cookie --browser chrome --save  
 python start.py --url url --cookie cookie --browser chrome-headless --save  
 python start.py --file ./url.txt --save  
 python start.py --burp ./test.xml --save  
 python start.py --file file --filter
+
 ```
 # --Help  
 **--url**&emsp;scan from url.  
