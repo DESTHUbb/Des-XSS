@@ -107,7 +107,7 @@ Some xss is difficult to scan.Des-XSS will save some files in traffic/ for analy
 + *.error(some error happened such as timeout,connection reset,etc.)
 + *.multipart(when request is multupart-formed,not easy to scan)
 # Example
-As you see in ![s1](https://github.com/lwzSoviet/download/blob/master/images/s1.png)the poc is `URL`,That means use the payload `xssjs%22%3B` in param "proxyAccount":  
+As you see in [Screenshot](https://github.com/lwzSoviet/NoXss#screenshot),the poc is `https://xxx/?proxyAccount=xssjs%22%3B&shareName=duhxams`,That means use the payload `xssjs%22%3B` in param "proxyAccount":   
 
 Then you can end the double qoutes use payload `xssjs";alert(1);//`.The final exploit is:  
 `https://xxx.com/?proxyAccount=xssjs";alert(1);//&shareName=duhxams`  
