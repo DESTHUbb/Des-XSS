@@ -3,7 +3,7 @@
 
 ![found](https://img.shields.io/badge/found-200%2B%20xss-red)
 [![issues](https://img.shields.io/github/issues/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/issues)
-[![release](https://img.shields.io/badge/release-v1.0--beta-blue)](https://github.com/ESTHUbb/Des-XSS/releases)
+[![release](https://img.shields.io/badge/release-v2.0--beta-blue)](https://github.com/ESTHUbb/Des-XSS/releases)
 [![license](https://img.shields.io/github/license/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/blob/master/LICENSE)
 
 
