@@ -89,11 +89,11 @@ Then you can scan test.xml:
 After scanning firstly,there will be taskid.traffic and taskid.reflect in ./traffic/:  
 + taskid.traffic: Web traffic of request(pickled).
 + taskid.reflect: Reflected result (pickled)that included reflected params,reflected position,type and others.  
-NoXss will use these middle files to rescan:  
+Des-XSS will use these middle files to rescan:  
 `python start.py --id taskid --save`
-# How does NoXss work?
+# How does Des-XSS work?
 ### Payloads
-NoXss use only 8 payloads for scanning.These payloads are based on param's reflected position.Fewer payloads make it faster than fuzzing.
+Des-XSS use only 8 payloads for scanning.These payloads are based on param's reflected position.Fewer payloads make it faster than fuzzing.
 ### Async&multi-process
 NoXss is highly concurrent for using coroutine.
 ### Support dom-based xss
