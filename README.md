@@ -95,7 +95,7 @@ Des-XSS will use these middle files to rescan:
 ### Payloads
 Des-XSS use only 8 payloads for scanning.These payloads are based on param's reflected position.Fewer payloads make it faster than fuzzing.
 ### Async&multi-process
-NoXss is highly concurrent for using coroutine.
+Des-XSS is highly concurrent for using coroutine.
 ### Support dom-based xss
 More and more page is using dom to render html.Des-XSS can parse it with using Phantomjs(default) or chrome.   
 ### Analysis files
