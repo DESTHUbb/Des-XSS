@@ -97,9 +97,9 @@ Des-XSS use only 8 payloads for scanning.These payloads are based on param's ref
 ### Async&multi-process
 NoXss is highly concurrent for using coroutine.
 ### Support dom-based xss
-More and more page is using dom to render html.NoXss can parse it with using Phantomjs(default) or chrome.   
+More and more page is using dom to render html.Des-XSS can parse it with using Phantomjs(default) or chrome.   
 ### Analysis files
-Some xss is difficult to scan.NoXss will save some files in traffic/ for analysing,include:
+Some xss is difficult to scan.Des-XSS will save some files in traffic/ for analysing,include:
 + *.traffic(traffic file during scanning)
 + *.reflect(param's reflected result)
 + *.redirect(30x response)
