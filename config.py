@@ -43,15 +43,17 @@ In short, this script is a NoXss configuration that defines working directory pa
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-VERSION MEJORAD Y ACTUALIZADA:
-    #!/usr/bin/env python3
+IMPROVED AND UPDATED VERSION: PYTHON3 
+#!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
+    
 """
-    @Description: Configuration of Des-XSS.
+""" @Description: Configuration of Des-XSS.
 
     ~~~~~~
     @Author  : DESTHUbb
-    @Time    : 13-06-2023  10:16
+    @Time    : 13-06-2023  12:30
+"""
 """
 import os
 from pathlib import Path
