@@ -90,7 +90,8 @@ python3 start.py --file file --filter
 **--browser**&emsp;use browser(chrome,chrome-headless or phantomjs) to scan,it's good at DOM-based xss but slow.  
 **--save**&emsp;save results to ./result/id.json.  
 **--clear**&emsp;delete traffic files after scanning.
-![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/5ccc052d-b0a7-41e1-aac8-fbe414b0a805)
+![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/0be7e353-c35a-4fa9-b094-e79223f8f8cb)
+
 
 ### How to scan data from Burpsuite
 In Proxy,"Save items" ==> "test.xml"  
