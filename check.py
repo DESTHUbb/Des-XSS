@@ -63,9 +63,9 @@ Also, the script imports two modules: urllib2 and selenium.
     It also imports a custom module called log, which contains a LOGGER object used to record log messages.
         
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7        
-VERSION MEJORADA Y ACTUALIZADA:
+IMPROVED AND UPDATED VERSION: PYTHON3
     
-    #!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
 """
 @Description: Check if the browser is installed and can be launched successfully.
