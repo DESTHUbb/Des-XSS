@@ -95,7 +95,7 @@ python3 start.py --file file --filter
 
 ### How to scan data from Burpsuite
 In Proxy,"Save items" ==> "test.xml"  
-![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/abccd4c6-a454-41c4-8b93-b1dd857df4f5)
+![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/689ea612-2083-4e4f-a1a8-ca68cf8005a2)
 Then you can scan test.xml:  
 `python3 start.py --burp=./test.xml`
 ### How to rescan
