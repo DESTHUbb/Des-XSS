@@ -27,8 +27,8 @@
 ├── cookie
 │   └── test.com_cookie
 ├── traffic
-│   ├── 49226b2cbc77b71b.traffic    #traffic file(pickled)
-│   └── 49226b2cbc77b71b.reflect    #reflected file(pickled)
+│   ├── ****************.traffic    #traffic file(pickled)
+│   └── ****************.reflect    #reflected file(pickled)
 ├── config.py
 ├── start.py
 ├── url.txt.filtered    #filtered urls
@@ -37,7 +37,7 @@
 ├── banner.py
 ├── requirements.txt
 ├── result
-│   └── 49226b2cbc77b71b-2019_10_29_11_24_44.json   #result
+│   └── ****************.json   #result
 ├── model.py
 └── test.py
 ```
