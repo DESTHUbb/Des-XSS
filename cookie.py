@@ -1,4 +1,4 @@
-#!/usr/bin/env python  
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Do some work about cookie"""
 import os
@@ -118,28 +118,27 @@ if __name__=='__main__':
     pass
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+DESCRIPTION:
 
-DESCRIPCION:
-    Este es un script de Python que se utiliza para trabajar con cookies en aplicaciones web. 
-    El script ofrece una serie de funciones que permiten obtener cookies de un archivo de cookies, guardar cookies en un archivo, y verificar si una cookie ha caducado.
+    This is a python script used to work with cookies in web applications.
+    The script offers a number of functions that allow you to get cookies from a cookie file, save cookies to a file, and check if a cookie has expired.
 
-El script comienza importando varios módulos de Python, incluyendo os, re y time. 
-Luego importa las variables COOKIE_DIR y LOGGER desde otros módulos llamados config y log, respectivamente.
+The script starts by importing various Python modules, including os, re, and time.
+It then imports the COOKIE_DIR and LOGGER variables from other modules called config and log, respectively.
 
-A continuación, se definen varias funciones en el script:
+Several functions are defined in the script below:
 
-is_ip: Esta función verifica si un dominio es una dirección IP.
-get_cookies_list: Esta función obtiene una lista de cookies para un dominio de destino. 
-La función busca un archivo de cookies en el directorio de cookies definido en COOKIE_DIR y devuelve una lista de diccionarios que representan cada cookie.
-save_cookie: Esta función guarda una cookie en un archivo de cookies en el directorio de cookies definido en COOKIE_DIR.
-save_cookie_ip: Esta función guarda una cookie en un archivo de cookies utilizando la dirección IP del servidor como nombre de archivo.
-get_cookie: Esta función obtiene una cookie para un dominio de destino. La función busca un archivo de cookies en el directorio de cookies definido en COOKIE_DIR y devuelve el valor de la cookie como una cadena.
-get_cookie_ip: Esta función obtiene una cookie utilizando la dirección IP del servidor como nombre de archivo.
-try_cookie: Esta función intenta obtener una cookie para un dominio de destino y le pregunta al usuario si desea utilizar la cookie encontrada en el archivo de cookies.
-Finalmente, el script verifica si se está ejecutando como un script independiente (name=='main') y no hace nada en ese caso.
+is_ip: This function checks if a domain is an IP address.
+get_cookies_list: This function gets a list of cookies for a destination domain.
+The function looks for a cookie file in the cookie directory defined in COOKIE_DIR and returns a list of dictionaries representing each cookie.
+save_cookie: This function saves a cookie to a cookie file in the cookie directory defined in COOKIE_DIR.
+save_cookie_ip: This function saves a cookie to a cookie file using the server's IP address as the file name.
+get_cookie: This function gets a cookie for a destination domain. The function looks for a cookie file in the cookie directory defined in COOKIE_DIR and returns the cookie value as a string.
+get_cookie_ip: This function gets a cookie using the server's IP address as the file name.
+try_cookie: This function tries to get a cookie for a destination domain and asks the user if they want to use the cookie found in the cookie file.
+Finally, the script checks if it is running as a standalone script (name=='main') and does nothing if it is.
 
-En resumen, este script de Python proporciona varias funciones para trabajar con cookies en aplicaciones web, incluyendo la obtención y el almacenamiento de cookies en archivos, y la verificación de si una cookie ha caducado.
-
+In summary, this Python script provides several functions for working with cookies in web applications, including getting and storing cookies in files, and checking if a cookie has expired.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 MEJORAS Y ACTUALIZACIONES:
