@@ -39,8 +39,8 @@ BASE_DIR is set to the current working directory for the script. COOKIE_DIR, RES
 Additionally, the script defines three empty lists: REQUEST_ERROR, REDIRECT, and MULTIPART.
 These lists are used to store information about request errors, redirect requests, and requests with multipart form data.
     
-En resumen, este script es una configuración de NoXss que define las rutas de los directorios de trabajo y las listas vacías que se utilizarán para almacenar información relevante durante el análisis de seguridad web.
-    
+In short, this script is a NoXss configuration that defines working directory paths and empty lists that will be used to store relevant information during web security analysis.
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 VERSION MEJORAD Y ACTUALIZADA:
