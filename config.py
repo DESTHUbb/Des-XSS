@@ -73,15 +73,16 @@ REDIRECTS = []
 # Save 'multipart/form-data; boundary=' requests
 MULTIPART = []
     
-  La versión mejorada y actualizada del script incluye lo siguiente:
+The improved and updated version of the script includes the following:
 
-Se ha actualizado la sintaxis de Python para utilizar Python 3.
-Se ha utilizado la biblioteca pathlib para trabajar con rutas de directorios de manera más eficiente.
-Se han cambiado los nombres de las variables en mayúsculas y minúsculas a mayúsculas para seguir la convención de nombres de variables en Python.
-Se han eliminado los comentarios innecesarios y se ha actualizado la descripción del script.
-La nueva versión del script utiliza la biblioteca pathlib para trabajar con rutas de directorios. 
-La variable BASE_DIR se establece como la ruta absoluta del directorio que contiene el script actual. 
-Las variables COOKIE_DIR, RESULT_DIR y TRAFFIC_DIR se establecen como objetos Path que representan las rutas a los directorios de cookies, resultados y tráfico, respectivamente.
+Python syntax has been updated to use Python 3.
+The pathlib library has been used to work with directory paths more efficiently.
+Variable names have been changed from case sensitive to upper case to follow the variable naming convention in Python.
+Unnecessary comments have been removed and the script description has been updated.
+The new version of the script uses the pathlib library to work with directory paths.
+The BASE_DIR variable is set to the absolute path of the directory containing the current script.
+The COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR variables are set as Path objects that represent the paths to the cookie, result, and traffic directories, respectively.
+
 
 Las listas REQUEST_ERRORS, REDIRECTS y MULTIPART se han renombrado con letras mayúsculas para seguir la convención de nombres de variables en Python. 
 Además, no se inicializan con valores ya que no se utilizarán hasta que se llenen con información relevante durante el análisis de seguridad web.
