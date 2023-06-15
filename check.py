@@ -157,12 +157,12 @@ if __name__ == '__main__':
 
 This updated version of the script has the following improvements:
 
-Se ha actualizado la sintaxis de Python para utilizar Python 3.
-Se ha mejorado la estructuración y organización del código y añadido funciones adicionales para comprobar el sistema operativo y las dependencias requeridas.
-Se ha añadido el control de excepciones y el manejo de errores para proporcionar mensajes de registro más descriptivos y claros.
-Se ha actualizado el módulo urllib2 a urllib.request para la comprobación de URL.
-La función check_dependencies() comprueba si los controladores del navegador (chromedriver y geckodriver) están instalados en el sistema. 
-Si alguno de estos controladores no está instalado, el script registra un mensaje de advertencia indicando que las dependencias requeridas no están instaladas.
+Python syntax has been updated to use Python 3.
+The structuring and organization of the code has been improved and additional functions have been added to check the operating system and required dependencies.
+Exception handling and error handling have been added to provide more descriptive and clear log messages.
+Updated urllib2 module to urllib.request for URL checking.
+The check_dependencies() function checks if the browser drivers (chromedriver and geckodriver) are installed on the system.
+If any of these drivers are not installed, the script logs a warning message indicating that the required dependencies are not installed.
 
 La función check_os() comprueba si el sistema operativo en el que se ejecuta el script es Windows, Linux o macOS. 
 Si el sistema operativo no está en esta lista, el script registra un mensaje de advertencia indicando que el sistema operativo no es compatible.
