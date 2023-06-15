@@ -48,7 +48,7 @@
 └── test.py
 ```
 # Screenshot 
-![s1](https://github.com/lwzSoviet/download/blob/master/images/s1.png)  
+
 # Environment
 Linux  
 Python2.7 a & 3.0
