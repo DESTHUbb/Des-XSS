@@ -68,3 +68,4 @@ done
 
 echo "All images have been downloaded and processed."
 This script starts by running a Python program called "download_images.py" that downloads images from a given URL in batches of 100 images. Then it checks how many files have been downloaded and if less than 100 it exits the script.
+If at least 100 images have been downloaded, the script splits the downloaded files into batches of 50 files using the "split" command. It then processes each batch of downloaded files using the "xargs" command to download the remaining images in each batch. Finally, it deletes the batch files and displays a message indicating that all the images have been downloaded and processed.
