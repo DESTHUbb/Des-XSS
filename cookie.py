@@ -49,7 +49,14 @@ def get_cookies_list(target_domain):
 def save_cookie(cookie,domain,expire_time=3600):
     domain_scope='.'+domain.split('.')[-2]+'.'+domain.split('.')[-1]
     expire=int(time.time())+expire_time
-    with open(os.path.join(COOKIE_DIR,'_'.join([domain_scope,'cookie'])), 'w+')as cookie_file:
+
+COOKIE_DIR = "/home/alex/Des-XSS/cookie"
+
+def save_cookie(cookie, domain):
+    domain_scope = domain.replace('.', '_')
+    cookie_file_path = os.path.join(COOKIE_DIR, f"{domain_scope}_cookie")
+    with open(cookie_file_path, 'w+') as cookie_file:
+        cookie_file.write(cookie)
         cookie_file.write(cookie + '\n')
         cookie_file.write(domain_scope+'\n')
         cookie_file.write(str(expire))
