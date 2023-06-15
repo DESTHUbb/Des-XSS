@@ -4,7 +4,7 @@
     @Description: Script to print a welcome message.
     
     ~~~~~~ 
-    @Author  : My Name
+    @Author  : DESTHUbb
     @Time    : 2023-06-13  10:00
 """
 
