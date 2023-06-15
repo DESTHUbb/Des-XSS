@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2.7
 # -*- encoding: utf-8 -*-
 """
     @Description: Check if the browser installed correctly.
