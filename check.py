@@ -172,8 +172,8 @@ The main() function calls the check_os(), check_dependencies(), check_install() 
 The check_install() function checks whether the Chrome or Firefox browser is installed and can be started correctly.
 If both browsers start successfully, the script logs a message indicating that the browsers are installed and can start successfully.
     
-La función check_url() comprueba si una URL proporcionada es accesible en línea. 
-Utiliza la biblioteca urllib.request de Python para abrir la URL proporcionada y, si se produce un error, el script registra un mensaje de advertencia indicando que la URL no se puede acceder.
+The check_url() function checks if a provided URL is accessible online.
+It uses the Python urllib.request library to open the provided URL, and if an error occurs, the script logs a warning message that the URL cannot be accessed.
 
 Además, el script utiliza el módulo logging para registrar mensajes de registro en lugar de utilizar un módulo personalizado.
 
