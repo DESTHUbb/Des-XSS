@@ -84,8 +84,8 @@ The BASE_DIR variable is set to the absolute path of the directory containing th
 The COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR variables are set as Path objects that represent the paths to the cookie, result, and traffic directories, respectively.
 
 
-Las listas REQUEST_ERRORS, REDIRECTS y MULTIPART se han renombrado con letras mayúsculas para seguir la convención de nombres de variables en Python. 
-Además, no se inicializan con valores ya que no se utilizarán hasta que se llenen con información relevante durante el análisis de seguridad web.
+The REQUEST_ERRORS, REDIRECTS, and MULTIPART lists have been renamed with uppercase letters to follow the Python variable naming convention.
+Also, they are not initialized with values ​​as they will not be used until they are filled with relevant information during web security analysis.
 
 En general, esta versión mejorada y actualizada del script sigue cumpliendo la misma función que la versión anterior, pero utiliza la sintaxis actualizada de Python y la biblioteca pathlib para una mayor eficiencia en el manejo de rutas de directorios.  
 
