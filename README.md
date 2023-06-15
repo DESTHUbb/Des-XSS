@@ -18,6 +18,15 @@
 + Traffic filter based on interface
 + Support speicial headers(referer,cookie,customized token,e.g.)
 + Support rescan quickly by id
+# Upcoming features :
++ Improved Unicode handling: Python 3 has better support for Unicode, making it easier to handle non-ASCII characters and strings.
++ Performance improvement: Python 3 has better performance than Python 2.7, which can make your program faster and more efficient.
++ Improved security: Python 3 has better security features, such as better exception handling and better support for SSL/TLS.
++ Improved syntax and features: Python 3 has introduced many new features and syntax improvements that can make your code more concise and readable.
++ Better support for asyncio: Python 3 has better support for asynchronous programming, which can make your program more efficient and scalable.
++ Improved libraries and modules: Python 3 has many new and improved libraries and modules that can make it easier to develop your program.
++ Support for modern tools and technologies: Python 3 is more compatible with modern tools and technologies, such as Docker and Kubernetes, which can make it easier to deploy and manage your program.
+
 # Directory
 ```python
 ├── engine.py
