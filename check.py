@@ -167,7 +167,7 @@ If any of these drivers are not installed, the script logs a warning message ind
 The check_os() function checks whether the operating system the script is running on is Windows, Linux, or macOS.
 If the operating system is not on this list, the script logs a warning message indicating that the operating system is not supported.
 
-La función main() llama a las funciones check_os(), check_dependencies(), check_install() y check_url() para comprobar si el sistema cumple con los requisitos necesarios para ejecutar el script.
+The main() function calls the check_os(), check_dependencies(), check_install() and check_url() functions to check whether the system meets the requirements necessary to run the script.
 
 La función check_install() comprueba si el navegador Chrome o Firefox están instalados y se pueden iniciar correctamente. 
 Si ambos navegadores se inician correctamente, el script registra un mensaje indicando que los navegadores están instalados y se pueden iniciar correctamente.
