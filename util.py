@@ -4,7 +4,7 @@
     @Description: Common Utils.
     
     ~~~~~~ 
-    @Author  : longwenzhang
+    @Author  : DESTHUbb
     @Time    : 19-10-9   12:16
 """
 import datetime
