@@ -141,8 +141,8 @@ Finally, the script checks if it is running as a standalone script (name=='main'
 In summary, this Python script provides several functions for working with cookies in web applications, including getting and storing cookies in files, and checking if a cookie has expired.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-MEJORAS Y ACTUALIZACIONES:
-    #!/usr/bin/env python3
+IMPROVEMENTS AND UPDATES: PYTHON3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Work with cookies"""
 import os
