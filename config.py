@@ -33,8 +33,8 @@ DESCRIPTION:
 This is a python script used to configure the NoXss application.
 The NoXss application is a web security analysis tool used to protect web applications against malicious code injection attacks, such as XSS (Cross-Site Scripting) attacks.
 
-El script define tres variables globales: BASE_DIR, COOKIE_DIR, RESULT_DIR y TRAFFIC_DIR. 
-BASE_DIR se establece como el directorio de trabajo actual para el script. COOKIE_DIR, RESULT_DIR y TRAFFIC_DIR son directorios utilizados por la aplicación NoXss para almacenar cookies, resultados y tráfico de red, respectivamente.
+The script defines three global variables: BASE_DIR, COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR.
+BASE_DIR is set to the current working directory for the script. COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR are directories used by the NoXss application to store cookies, results, and network traffic, respectively.
 
 Además, el script define tres listas vacías: REQUEST_ERROR, REDIRECT y MULTIPART. 
 Estas listas se utilizan para almacenar información sobre errores de solicitud, solicitudes de redireccionamiento y solicitudes con datos de formulario multipart.
