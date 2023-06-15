@@ -46,9 +46,9 @@ def check_url(url):
         
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-DESCRIPCION:
+DESCRIPTION:
     
-    Este es un script de Python que tiene dos funciones: check_install() y check_url(url).
+    This is a python script that has two functions: check_install() and check_url(url).
 
 La función check_install() comprueba si el navegador Chrome o PhantomJS están instalados correctamente en el sistema. 
 En primer lugar, intenta iniciar una instancia de Chrome. Si esto falla, intenta iniciar una instancia de PhantomJS. 
