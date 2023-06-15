@@ -51,7 +51,7 @@
 ![s1](https://github.com/lwzSoviet/download/blob/master/images/s1.png)  
 # Environment
 Linux  
-Python2.7  
+Python2.7 a & 3.0
 Browser:Phantomjs or Chrome
 # Install
 ### Ubuntu
@@ -65,16 +65,16 @@ Browser:Phantomjs or Chrome
 + 2.`pip install -r requirements.txt`  
 -----
 *If you want to scan use "--browser=chrome",you must install chrome mannually. You can use "--check" to test the installation.*  
-`python start.py --check`
+`python3 start.py --check`
 # Usage
 ```python
 
-python start.py --url url --save
-python start.py --url url --cookie cookie --browser chrome --save  
-python start.py --url url --cookie cookie --browser chrome-headless --save  
-python start.py --file ./url.txt --save  
-python start.py --burp ./test.xml --save  
-python start.py --file file --filter
+python3 start.py --url url --save
+python3 start.py --url url --cookie cookie --browser chrome --save  
+python3 start.py --url url --cookie cookie --browser chrome-headless --save  
+python3 start.py --file ./url.txt --save  
+python3 start.py --burp ./test.xml --save  
+python3 start.py --file file --filter
 
 ```
 # --Help  
@@ -95,13 +95,13 @@ python start.py --file file --filter
 In Proxy,"Save items" ==> "test.xml"  
 ![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/abccd4c6-a454-41c4-8b93-b1dd857df4f5)
 Then you can scan test.xml:  
-`python start.py --burp=./test.xml`
+`python3 start.py --burp=./test.xml`
 ### How to rescan
 After scanning firstly,there will be taskid.traffic and taskid.reflect in ./traffic/:  
 + taskid.traffic: Web traffic of request(pickled).
 + taskid.reflect: Reflected result (pickled)that included reflected params,reflected position,type and others.  
 Des-XSS will use these middle files to rescan:  
-`python start.py --id taskid --save`
+`python3 start.py --id taskid --save`
 # How does Des-XSS work?
 ### Payloads
 Des-XSS use only 8 payloads for scanning.These payloads are based on param's reflected position.Fewer payloads make it faster than fuzzing.
