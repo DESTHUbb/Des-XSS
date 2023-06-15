@@ -28,10 +28,10 @@ MULTIPART=[]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-DESCRIPCION:
+DESCRIPTION:
     
-Este es un script de Python que se utiliza para configurar la aplicación NoXss. 
-La aplicación NoXss es una herramienta de análisis de seguridad web que se utiliza para proteger aplicaciones web contra ataques de inyección de código malicioso, como ataques XSS (Cross-Site Scripting).
+This is a python script used to configure the NoXss application.
+The NoXss application is a web security analysis tool used to protect web applications against malicious code injection attacks, such as XSS (Cross-Site Scripting) attacks.
 
 El script define tres variables globales: BASE_DIR, COOKIE_DIR, RESULT_DIR y TRAFFIC_DIR. 
 BASE_DIR se establece como el directorio de trabajo actual para el script. COOKIE_DIR, RESULT_DIR y TRAFFIC_DIR son directorios utilizados por la aplicación NoXss para almacenar cookies, resultados y tráfico de red, respectivamente.
