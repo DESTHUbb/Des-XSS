@@ -18,7 +18,7 @@
 + Traffic filter based on interface
 + Support speicial headers(referer,cookie,customized token,e.g.)
 + Support rescan quickly by id
-# Upcoming features :
+# Upcoming py3 features:
 + Improved Unicode handling: Python 3 has better support for Unicode, making it easier to handle non-ASCII characters and strings.
 + Performance improvement: Python 3 has better performance than Python 2.7, which can make your program faster and more efficient.
 + Improved security: Python 3 has better security features, such as better exception handling and better support for SSL/TLS.
