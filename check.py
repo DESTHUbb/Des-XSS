@@ -50,10 +50,10 @@ DESCRIPTION:
     
     This is a python script that has two functions: check_install() and check_url(url).
 
-La función check_install() comprueba si el navegador Chrome o PhantomJS están instalados correctamente en el sistema. 
-En primer lugar, intenta iniciar una instancia de Chrome. Si esto falla, intenta iniciar una instancia de PhantomJS. 
-Si ambos intentos fallan, el script registra un mensaje de advertencia indicando que ningún navegador está instalado correctamente. 
-Si uno o ambos navegadores se inician correctamente, el script registra un mensaje indicando que los navegadores están instalados correctamente.
+The check_install() function checks if the Chrome or PhantomJS browser is correctly installed on the system.
+First, it tries to start an instance of Chrome. If this fails, try starting a PhantomJS instance.
+If both attempts fail, the script logs a warning message indicating that neither browser is installed correctly.
+If one or both browsers start successfully, the script logs a message indicating that the browsers are installed correctly
 
 La función check_url(url) comprueba si una URL proporcionada es accesible en línea. 
 Utiliza la biblioteca urllib2 de Python para abrir la URL proporcionada y, si se produce un error, el script registra un mensaje de advertencia indicando que la URL no se puede acceder.
@@ -67,12 +67,13 @@ VERSION MEJORADA Y ACTUALIZADA:
     
     #!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
-"""@Description: Check if the browser is installed and can be launched successfully.
+"""
+@Description: Check if the browser is installed and can be launched successfully.
 
     ~~~~~~
     @Author  : DESTHUbb
     @Time    : 19-10-29   3:46
-"""
+    """
 
 import logging
 import platform
