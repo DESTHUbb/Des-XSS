@@ -7,7 +7,7 @@ import time
 from config import COOKIE_DIR
 from log import LOGGER
 
-__author__ = 'longwenzhang'
+__author__ = 'DESTHUbb'
 
 def is_ip(domain):
     if re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}',domain):
