@@ -4,7 +4,7 @@
     @Description: Configuration of Des-XSS.
     
     ~~~~~~ 
-    @Author  : Des-XSS
+    @Author  : DESTHUbb
     @Time    : 19-10-9  10:16
 """
 import os
