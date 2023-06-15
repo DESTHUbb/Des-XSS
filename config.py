@@ -87,7 +87,6 @@ The COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR variables are set as Path objects th
 The REQUEST_ERRORS, REDIRECTS, and MULTIPART lists have been renamed with uppercase letters to follow the Python variable naming convention.
 Also, they are not initialized with values ​​as they will not be used until they are filled with relevant information during web security analysis.
 
-En general, esta versión mejorada y actualizada del script sigue cumpliendo la misma función que la versión anterior, pero utiliza la sintaxis actualizada de Python y la biblioteca pathlib para una mayor eficiencia en el manejo de rutas de directorios.  
-
+In general, this improved and updated version of the script continues to do the same thing as the previous version, but uses updated Python syntax and the pathlib library for more efficiency in handling directory paths.
 
     
