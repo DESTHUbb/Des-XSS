@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
 """
     @Description: Check if the browser installed correctly.
@@ -7,18 +7,18 @@
     @Author  : longwenzhang
     @Time    : 19-10-29   3:46
 """
-import urllib2
+import urllib.request
 from log import LOGGER
 from selenium import webdriver
 
 def check_install():
     try:
-        br=webdriver.Chrome()
-    except Exception, e:
+        br = webdriver.Chrome()
+    except Exception as e:
         LOGGER.info(e)
         try:
-            br=webdriver.PhantomJS()
-        except Exception, e:
+            br = webdriver.PhantomJS()
+        except Exception as e:
             LOGGER.info(e)
             LOGGER.warn('No browser is installed correctly!')
         else:
@@ -28,8 +28,8 @@ def check_install():
         br.quit()
         LOGGER.info('Chrome is installed correctly.')
         try:
-            br=webdriver.PhantomJS()
-        except Exception, e:
+            br = webdriver.PhantomJS()
+        except Exception as e:
             LOGGER.info(e)
         else:
             br.quit()
@@ -38,11 +38,11 @@ def check_install():
 
 def check_url(url):
     try:
-        urllib2.urlopen(url,timeout=20)
-    except Exception,e:
+        urllib.request.urlopen(url,timeout=20)
+    except Exception as e:
         LOGGER.warn('Check url error: '+str(e))
         exit(0)
-        
+
         
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -67,11 +67,10 @@ VERSION MEJORADA Y ACTUALIZADA:
     
     #!/usr/bin/env python3
 # -*- encoding: utf-8 -*-
-"""
-    @Description: Check if the browser is installed and can be launched successfully.
+"""@Description: Check if the browser is installed and can be launched successfully.
 
     ~~~~~~
-    @Author  : longwenzhang
+    @Author  : DESTHUbb
     @Time    : 19-10-29   3:46
 """
 
