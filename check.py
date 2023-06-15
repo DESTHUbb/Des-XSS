@@ -175,7 +175,6 @@ If both browsers start successfully, the script logs a message indicating that t
 The check_url() function checks if a provided URL is accessible online.
 It uses the Python urllib.request library to open the provided URL, and if an error occurs, the script logs a warning message that the URL cannot be accessed.
 
-Además, el script utiliza el módulo logging para registrar mensajes de registro en lugar de utilizar un módulo personalizado.
-
+Also, the script uses the logging module to record log messages instead of using a custom module.
 
 
