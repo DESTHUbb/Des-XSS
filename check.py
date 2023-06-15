@@ -4,7 +4,7 @@
     @Description: Check if the browser installed correctly.
     
     ~~~~~~ 
-    @Author  : longwenzhang
+    @Author  : DESTHUbb
     @Time    : 19-10-29   3:46
 """
 import urllib.request
