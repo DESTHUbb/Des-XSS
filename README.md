@@ -3,8 +3,10 @@
 
 ![found](https://img.shields.io/badge/found-200%2B%20xss-red) [![issues](https://img.shields.io/github/issues/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/issues) ![](https://img.shields.io/badge/MainLanguage-Python-blue?style=flat-square)  [![release](https://img.shields.io/badge/release-v2.0--beta-blue)](https://github.com/ESTHUbb/Des-XSS/releases) [![license](https://img.shields.io/github/license/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/blob/master/LICENSE)
 
-## Still working on improvement¡¡¡
 ## Des-XSS is a quick tool that scans millions of URLs for cross-site scripting vulnerabilities. It has found XSS vulnerabilities in bug bounty programs.
+
+### Still working on improvement¡¡¡
+
 
 # Features
 + Fast and suitable for testing millions of urls
