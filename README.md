@@ -1,11 +1,7 @@
 # 𝔻𝕖𝕤-𝕏𝕊𝕊
 ![Des-xss](https://github.com/DESTHUbb/Des-XSS/assets/90658763/49830780-f4c7-47db-afb9-179f8181b83a)
 
-![found](https://img.shields.io/badge/found-200%2B%20xss-red)
-[![issues](https://img.shields.io/github/issues/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/issues)
-![](https://img.shields.io/badge/MainLanguage-Python-blue?style=flat-square)  
-[![release](https://img.shields.io/badge/release-v2.0--beta-blue)](https://github.com/ESTHUbb/Des-XSS/releases)
-[![license](https://img.shields.io/github/license/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/blob/master/LICENSE)
+![found](https://img.shields.io/badge/found-200%2B%20xss-red) [![issues](https://img.shields.io/github/issues/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/issues) ![](https://img.shields.io/badge/MainLanguage-Python-blue?style=flat-square)  [![release](https://img.shields.io/badge/release-v2.0--beta-blue)](https://github.com/ESTHUbb/Des-XSS/releases) [![license](https://img.shields.io/github/license/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/blob/master/LICENSE)
 
 
 ## Des-XSS is a quick tool that scans millions of URLs for cross-site scripting vulnerabilities. It has found XSS vulnerabilities in bug bounty programs.
