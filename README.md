@@ -5,8 +5,7 @@
 
 ## Des-XSS is a quick tool that scans millions of URLs for cross-site scripting vulnerabilities. It has found XSS vulnerabilities in bug bounty programs.
 
-### Still working on improvement¡¡¡
-
+### I'm still working on improving the program¡¡¡¡
 
 # Features
 + Fast and suitable for testing millions of urls
