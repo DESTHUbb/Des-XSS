@@ -1,11 +1,11 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python3.0
 # -*- encoding: utf-8 -*-
 """
-    @Description: Core of NoXss,include preprocess,detect,scan,e.g.
+    @Description: Core of Des-XSS,include preprocess,detect,scan,e.g.
 
     ~~~~~~
-    @Author  : longwenzhang
-    @Time    : 19-10-9  10:13
+    @Author  : DESTHUbb
+    @Time    : 19-10-9  10:30
 """
 import cPickle
 import os
