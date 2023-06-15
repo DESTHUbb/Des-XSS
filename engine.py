@@ -7,18 +7,21 @@
     @Author  : DESTHUbb
     @Time    : 19-10-9  10:30
 """
-import cPickle
+import pickle
 import os
 import time
 import urllib
-import urllib2
-from Queue import Empty
-from httplib import BadStatusLine
+import urllib.request
+import urllib.error
+import multiprocessing
+from queue import Empty
+from http.client import BadStatusLine
 from multiprocessing import Process, Manager
 import json
 import re
+import logging
 from log import LOGGER
-import urlparse
+import urllib.parse
 from ssl import CertificateError
 from xml.etree import cElementTree
 from selenium.common.exceptions import TimeoutException, UnexpectedAlertPresentException
@@ -31,10 +34,10 @@ from util import functimeout, Func_timeout_error, change_by_param, list2dict, ch
 import gevent
 from gevent import pool
 from socket import error as SocketError
-from httplib import InvalidURL
+from http.client import InvalidURL
 try:
     from bs4 import BeautifulSoup
-except ImportError, e:
+except ImportError as e:
     LOGGER.warn(e)
 # def _pickle_method(m):
 #     if m.im_self is None:
@@ -79,11 +82,13 @@ class Traffic_generator(Process):
         # add referer
         self.DEFAULT_HEADER['Referer'] = 'https"//' + domain + '/'
         request = HttpRequest(method='GET', url=url, headers=self.DEFAULT_HEADER, body='')
-        req = urllib2.Request(url=url, headers=self.DEFAULT_HEADER)
-        with gevent.Timeout(10, False)as t:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+        req = urllib.request.Request(url=url, headers=self.DEFAULT_HEADER)
+        with gevent.Timeout(10, False) as t:
             try:
-                resp = urllib2.urlopen(req)
-            except urllib2.URLError, e:
+                req = urllib.request.Request(url, headers=headers)
+                resp = urllib.request.urlopen(req, timeout=10)
+            except (urllib.error.URLError, e):
                 REQUEST_ERROR.append(('gen_traffic()', url, e.reason))
             except CertificateError:
                 REQUEST_ERROR.append(('gen_traffic()', url, 'ssl.CertificateError'))
@@ -94,10 +99,10 @@ class Traffic_generator(Process):
                     REDIRECT.append(url)
                 try:
                     data = resp.read()
-                except Exception, e:
+                except (Exception, e):
                     LOGGER.warn(e)
                 else:
-                    resp_headers = resp.headers.headers
+                    resp_headers = resp.headers
                     resp_headers_dict = list2dict(resp_headers)
                     response = HttpResponse(code=str(resp.code), reason=resp.msg, headers=resp_headers_dict,
                                             data=data)
@@ -119,13 +124,11 @@ class Traffic_generator(Process):
                 traffic_list.append(i.value)
         # save traffic for rescan
         Engine.save_traffic(traffic_list, self.id)
-
-class Detector():
+class Engine():
     """
     Do some detect-work,e.g.,detect the param and value in url(https://example.com/test?a=1&b=2--->{a:1,b:2}),
     detect the reflect param's position in the response(in html,js or tag's value).
     """
-
     @staticmethod
     def detect_json(json_str):
         """
@@ -371,7 +374,7 @@ class Processor():
             func = getattr(self, i)
             try:
                 func()
-            except Func_timeout_error,e:
+            except (Func_timeout_error, e):
                 LOGGER.warn(str(e)+self.request.url)
 
 class Scan(Process):
@@ -558,7 +561,7 @@ class Verify():
                 if path not in blocked_urls:
                     try:
                         browser.get(url)
-                    except TimeoutException, e:
+                    except (TimeoutException, e):
                         LOGGER.warn(e)
                         # mark if browser get() exception
                         REQUEST_ERROR.append(('Openner get()', url, 'timeout'))
@@ -569,7 +572,7 @@ class Verify():
                             splited = url.split('/', 3)
                             path = '/'.join(splited)
                             blocked_urls.append(path)
-                    except BadStatusLine, e:
+                    except (BadStatusLine, e):
                         LOGGER.warn(e)
                         REQUEST_ERROR.append(('Render get()', url, 'BadStatusLine'))
                         splited = url.split('/', 3)
@@ -684,7 +687,7 @@ class Render(Process):
             if path not in blocked_urls:
                 try:
                     browser.get(url)
-                except TimeoutException, e:
+                except (TimeoutException, WebDriverException) as e:
                     LOGGER.warn(e)
                     # save if browser get() exception
                     REQUEST_ERROR.append(('Render get()', url, 'timeout'))
@@ -695,7 +698,7 @@ class Render(Process):
                         splited = url.split('/', 3)
                         path = '/'.join(splited)
                         blocked_urls.append(path)
-                except BadStatusLine, e:
+                except (BadStatusLine, http_client.IncompleteRead) as e:
                     LOGGER.warn(e)
                     REQUEST_ERROR.append(('Render get()', url, 'BadStatusLine'))
                     splited = url.split('/', 3)
@@ -745,6 +748,17 @@ class Engine(object):
         self.filter=filter
 
     def put_queue(self):
+        try:
+           assert self.url is not None, "Error: 'url' is None"
+           assert self.target is not None, "Error: 'target' is None"
+        
+        # Código para agregar elementos a la cola
+           self.queue.put((self.url, self.target))
+        except Exception as e:
+           print(f"Error: {e}")
+        # Código para agregar elementos a la cola
+        pass
+        pass
         traffic_path = []
         files = os.listdir(TRAFFIC_DIR)
         for i in files:
@@ -752,7 +766,7 @@ class Engine(object):
                 traffic_path.append(os.path.join(TRAFFIC_DIR, i))
         for i in traffic_path:
             with open(i)as f:
-                traffic_list = cPickle.load(f)
+                traffic_list = pickle.load(f)
                 LOGGER.info('Start to put traffic( used %s) into traffic_queue,Total is %s.' % (i, len(traffic_list)))
                 for traffic in traffic_list:
                     traffic_queue.put(traffic)
@@ -774,7 +788,7 @@ class Engine(object):
                 xmlstr = f.read()
             try:
                 root = ET.fromstring(xmlstr)
-            except cElementTree.ParseError,e:
+            except (cElementTree.ParseError, etree.ElementTree.ParseError) as e:
                 LOGGER.error('Parse burpsuite data error: '+str(e))
                 exit(0)
             for child in root:
@@ -804,7 +818,7 @@ class Engine(object):
                                     if header_key not in req_headers.keys():
                                         req_headers[header_key] = header_value
                                 # split header error
-                                except IndexError,e:
+                                except (IndexError, TypeError) as e:
                                     LOGGER.warn(e)
                             body = req_text.split('\r\n\r\n', 1)[1]
                             request = HttpRequest(method, url, req_headers, body)
@@ -841,7 +855,7 @@ class Engine(object):
 
     @staticmethod
     def get_traffic_path(id):
-        traffic_path = os.path.join(TRAFFIC_DIR, id + '.traffic')
+        traffic_path = os.path.join(TRAFFIC_DIR, id.decode('utf-8') + '.traffic')
         return traffic_path
 
     def get_render_task(self, url_list):
@@ -894,7 +908,7 @@ class Engine(object):
                 pass
             else:
                 with open(reflect_path, 'w') as f:
-                    cPickle.dump(saved_list, f)
+                    pickle.dump(saved_list, f)
 
     @staticmethod
     def save_traffic(traffic_obj_list, id, piece=3000):
@@ -905,7 +919,16 @@ class Engine(object):
         :param piece: default 3000 per piece
         :return:
         """
-        traffic_path = Engine.get_traffic_path(id)
+        url = 'https://example.com'
+        file = 'example.txt'
+        burp = True
+        process = 'process'
+        coroutine = 'coroutine'
+        browser = 'browser'
+        filter = 'filter'
+
+        engine = Engine(id, url, file, burp, process, coroutine, browser, filter)
+        
         if len(traffic_obj_list) > 0:
             saved_traffic_list = [i for i in traffic_obj_list]
             # slice traffic if too large
@@ -915,27 +938,28 @@ class Engine(object):
                 for i in range(len(traffic_divided)):
                     traffic_divided_path.append(traffic_path + str(i))
                     with open(traffic_path + str(i), 'w')as traffic_f:
-                        cPickle.dump(traffic_divided[i], traffic_f)
+                        pickle.dump(traffic_divided[i], traffic_f)
                 LOGGER.info('Traffic of %s has been divided and saved to %s.' % (id, ','.join(traffic_divided_path)))
             else:
-                with open(traffic_path, 'w')as traffic_f:
-                    cPickle.dump(saved_traffic_list, traffic_f)
+                    traffic_path = os.path.join('/path/to/traffic', 'cf72abb44933e0f5.traffic')
+                    with open(traffic_path, 'w')as traffic_f:
+                        pickle.dump(saved_traffic_list, traffic_f)
                     LOGGER.info('Traffic of %s has been saved to %s.' % (id, traffic_path))
 
     def save_request_exception(self):
         if len(REQUEST_ERROR) > 0:
             with open(self.get_traffic_path(self.id).replace('.traffic', '.error'), 'w')as f:
-                cPickle.dump(REQUEST_ERROR, f)
+                pickle.dump(REQUEST_ERROR, f)
 
     def save_redirect(self):
         if len(REDIRECT) > 0:
             with open(self.get_traffic_path(self.id).replace('.traffic', '.redirect'), 'w')as f:
-                cPickle.dump(REDIRECT, f)
+                pickle.dump(REDIRECT, f)
 
     def save_multipart(self):
         if len(MULTIPART) > 0:
             with open(self.get_traffic_path(self.id).replace('.traffic', '.multipart'), 'w')as f:
-                cPickle.dump(MULTIPART, f)
+                pickle.dump(MULTIPART, f)
 
     def save_analysis(self):
         LOGGER.info('Total multipart is: %s,redirect is: %s,request exception is: %s' % (
@@ -954,7 +978,7 @@ class Engine(object):
     def is_scanned(id):
         files = os.listdir(TRAFFIC_DIR)
         for i in files:
-            if re.search(id + '\.traffic\d*', i):
+            if re.search(id.decode('utf-8') + '\.traffic\d*',i):
                 return True
 
     def start(self):
@@ -964,7 +988,7 @@ class Engine(object):
             if choice == 'Y' or choice == 'y' or re.search('yes',choice,re.I):
                 self.put_queue()
                 self.send_end_sig()
-            elif choice is 'N' or choice is 'n' or re.search('no',choice,re.I):
+            elif choice == 'N' or choice == 'n' or re.search('no', choice, re.I):
                 exit(0)
             else:
                 LOGGER.error('Incorrect choice.')
@@ -1014,12 +1038,44 @@ class Engine(object):
                 self.send_end_sig()
             else:
                 # traffic genetator
-                LOGGER.info('Start to request url with urllib2.')
+                LOGGER.info('Start to request url with urllib.request.')
                 traffic_maker = Traffic_generator(self.id, url_list,self.coroutine)
                 traffic_maker.start()
                 traffic_maker.join()
-                self.put_queue()
-                self.send_end_sig()
+class Engine:
+    def __init__(self, queue, result_queue, target, url, **kwargs):
+        self.queue = queue
+        self.result_queue = result_queue
+        self.target = target
+        self.url = url
+        self.kwargs = kwargs
+        self.put_queue = self.put_queue()  # inicializa el método put_queue
+
+    def start(self):
+        try:
+            self.put_queue()
+            self.process_queue()
+        except Exception as e:
+            print(f"Error: {e}")
+            return []
+
+    def put_queue(self):
+        try:
+           assert self.url is not None, "Error: 'url' is None"
+           assert self.target is not None, "Error: 'target' is None"
+        
+        # Código para agregar elementos a la cola
+           self.queue.put((self.url, self.target))
+        except Exception as e:
+           print(f"Error: {e}")
+        # Código para agregar elementos a la cola
+        pass
+
+    def process_queue(self):
+        # Código para procesar la cola
+        pass
+        self.put_queue()
+        self.send_end_sig()
         # scan
         task = [Scan() for i in range(self.process)]
         for i in task:
