@@ -36,9 +36,9 @@ The NoXss application is a web security analysis tool used to protect web applic
 The script defines three global variables: BASE_DIR, COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR.
 BASE_DIR is set to the current working directory for the script. COOKIE_DIR, RESULT_DIR, and TRAFFIC_DIR are directories used by the NoXss application to store cookies, results, and network traffic, respectively.
 
-Además, el script define tres listas vacías: REQUEST_ERROR, REDIRECT y MULTIPART. 
-Estas listas se utilizan para almacenar información sobre errores de solicitud, solicitudes de redireccionamiento y solicitudes con datos de formulario multipart.
-
+Additionally, the script defines three empty lists: REQUEST_ERROR, REDIRECT, and MULTIPART.
+These lists are used to store information about request errors, redirect requests, and requests with multipart form data.
+    
 En resumen, este script es una configuración de NoXss que define las rutas de los directorios de trabajo y las listas vacías que se utilizarán para almacenar información relevante durante el análisis de seguridad web.
     
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
