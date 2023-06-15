@@ -154,7 +154,8 @@ def main():
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     main()
-Esta versión actualizada del script tiene las siguientes mejoras:
+
+This updated version of the script has the following improvements:
 
 Se ha actualizado la sintaxis de Python para utilizar Python 3.
 Se ha mejorado la estructuración y organización del código y añadido funciones adicionales para comprobar el sistema operativo y las dependencias requeridas.
