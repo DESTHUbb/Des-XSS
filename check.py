@@ -164,8 +164,8 @@ Updated urllib2 module to urllib.request for URL checking.
 The check_dependencies() function checks if the browser drivers (chromedriver and geckodriver) are installed on the system.
 If any of these drivers are not installed, the script logs a warning message indicating that the required dependencies are not installed.
 
-La función check_os() comprueba si el sistema operativo en el que se ejecuta el script es Windows, Linux o macOS. 
-Si el sistema operativo no está en esta lista, el script registra un mensaje de advertencia indicando que el sistema operativo no es compatible.
+The check_os() function checks whether the operating system the script is running on is Windows, Linux, or macOS.
+If the operating system is not on this list, the script logs a warning message indicating that the operating system is not supported.
 
 La función main() llama a las funciones check_os(), check_dependencies(), check_install() y check_url() para comprobar si el sistema cumple con los requisitos necesarios para ejecutar el script.
 
