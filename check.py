@@ -55,12 +55,12 @@ First, it tries to start an instance of Chrome. If this fails, try starting a Ph
 If both attempts fail, the script logs a warning message indicating that neither browser is installed correctly.
 If one or both browsers start successfully, the script logs a message indicating that the browsers are installed correctly
 
-La función check_url(url) comprueba si una URL proporcionada es accesible en línea. 
-Utiliza la biblioteca urllib2 de Python para abrir la URL proporcionada y, si se produce un error, el script registra un mensaje de advertencia indicando que la URL no se puede acceder.
+The check_url(url) function checks if a given URL is accessible online.
+It uses the Python urllib2 library to open the provided URL, and if an error occurs, the script logs a warning message that the URL cannot be accessed.
 
-Además, el script importa dos módulos: urllib2 y selenium. 
-    El módulo urllib2 se utiliza en la función check_url() para acceder a una URL proporcionada, mientras que el módulo selenium se utiliza en la función check_install() para iniciar una instancia de Chrome o PhantomJS.
-    También importa un módulo personalizado llamado log, que contiene un objeto LOGGER utilizado para registrar mensajes de registro.
+Also, the script imports two modules: urllib2 and selenium.
+    The urllib2 module is used in the check_url() function to access a provided URL, while the selenium module is used in the check_install() function to start a Chrome or PhantomJS instance.
+    It also imports a custom module called log, which contains a LOGGER object used to record log messages.
         
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7        
 VERSION MEJORADA Y ACTUALIZADA:
