@@ -169,9 +169,9 @@ If the operating system is not on this list, the script logs a warning message i
 
 The main() function calls the check_os(), check_dependencies(), check_install() and check_url() functions to check whether the system meets the requirements necessary to run the script.
 
-La función check_install() comprueba si el navegador Chrome o Firefox están instalados y se pueden iniciar correctamente. 
-Si ambos navegadores se inician correctamente, el script registra un mensaje indicando que los navegadores están instalados y se pueden iniciar correctamente.
-
+The check_install() function checks whether the Chrome or Firefox browser is installed and can be started correctly.
+If both browsers start successfully, the script logs a message indicating that the browsers are installed and can start successfully.
+    
 La función check_url() comprueba si una URL proporcionada es accesible en línea. 
 Utiliza la biblioteca urllib.request de Python para abrir la URL proporcionada y, si se produce un error, el script registra un mensaje de advertencia indicando que la URL no se puede acceder.
 
