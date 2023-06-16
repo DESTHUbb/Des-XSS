@@ -52,8 +52,10 @@
 ![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/78bb2017-e40d-43e1-8023-19f852a2400e)
 
 # Environment
-Linux  
+Linux
+
 Python2.7 a & 3.0
+
 Browser:Phantomjs or Chrome
 # Install
 ### Ubuntu
