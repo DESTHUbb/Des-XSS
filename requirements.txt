@@ -3,3 +3,4 @@ gevent==1.4.0
 selenium==3.141.0
 beautifulsoup4==4.8.1
 multiprocessing==3.10.
+requests==2.31.0
