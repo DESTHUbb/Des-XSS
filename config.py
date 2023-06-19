@@ -51,3 +51,5 @@ REQUEST_ERROR = []
 # Save redirect requests
 REDIRECT = []
 
+# Save 'multipart/form-data; boundary=' requests
+MULTIPART = []
