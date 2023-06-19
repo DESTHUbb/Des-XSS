@@ -44,4 +44,5 @@ COOKIE_DIR = os.path.join(BASE_DIR, 'cookie')
 RESULT_DIR = os.path.join(BASE_DIR, 'result')
 TRAFFIC_DIR = os.path.join(BASE_DIR, 'traffic')
 
-
+# Save request errors in the following format:
+# [(func_name, request, exception)]
