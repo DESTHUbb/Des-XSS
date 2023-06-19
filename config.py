@@ -38,5 +38,6 @@ Configuration of Des-XSS.
 
 import os
 
-
+# Global directories
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     
