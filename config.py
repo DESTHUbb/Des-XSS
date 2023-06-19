@@ -46,3 +46,5 @@ TRAFFIC_DIR = os.path.join(BASE_DIR, 'traffic')
 
 # Save request errors in the following format:
 # [(func_name, request, exception)]
+REQUEST_ERROR = []
+
