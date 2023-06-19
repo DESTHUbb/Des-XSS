@@ -48,3 +48,6 @@ TRAFFIC_DIR = os.path.join(BASE_DIR, 'traffic')
 # [(func_name, request, exception)]
 REQUEST_ERROR = []
 
+# Save redirect requests
+REDIRECT = []
+
