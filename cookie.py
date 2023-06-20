@@ -136,3 +136,4 @@ __author__ = 'DESTHUbb'
 
 def is_ip(domain):
     """Check if the given domain is an IP address."""
+    return re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}', domain) is not None
