@@ -183,3 +183,5 @@ if cookie:
         choose = input('\033[1;32m{}\033[0m'.format(f"Cookie of {domain} is found in ./cookie/, Do you want to use it? (y/n)"))
             return cookie
 
+if __name__ == '__main__':
+    pass
