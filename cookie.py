@@ -161,4 +161,5 @@ def save_cookie(cookie, domain, expire_time=3600):
         cookie_file.write(str(expire))
 
 def get_cookie(target_domain):
+    """Get the cookie for the specified target domain if it exists and is not expired."""
 
