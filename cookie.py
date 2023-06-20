@@ -165,4 +165,5 @@ def get_cookie(target_domain):
     scope = domain_scope(target_domain)
     cookie_file_path = get_cookie_file_path(scope)
     if os.path.exists(cookie_file_path):
+        with open(cookie_file_path, "r") as cookie_file:
 
