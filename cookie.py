@@ -170,4 +170,5 @@ def get_cookie(target_domain):
             expire = cookie_file_list[2]
 
             if int(time.time()) < int(expire):
-
+else:
+                LOGGER.warn(f'Cookie of {scope} is expired!!!')
