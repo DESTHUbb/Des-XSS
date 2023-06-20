@@ -143,3 +143,5 @@ def domain_scope(target_domain):
        if is_ip(target_domain):
   return target_domain
     else: 
+        return '.'.join(target_domain.split('.')[-2:])
+
