@@ -175,3 +175,5 @@ else:
               else:
         return None
 
+def try_cookie(domain):
+
