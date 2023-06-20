@@ -145,3 +145,5 @@ def domain_scope(target_domain):
     else: 
         return '.'.join(target_domain.split('.')[-2:])
 
+def get_cookie_file_path(scope):
+
