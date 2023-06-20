@@ -164,4 +164,5 @@ def get_cookie(target_domain):
     """Get the cookie for the specified target domain if it exists and is not expired."""
     scope = domain_scope(target_domain)
     cookie_file_path = get_cookie_file_path(scope)
+    if os.path.exists(cookie_file_path):
 
