@@ -150,3 +150,4 @@ def get_cookie_file_path(scope):
     return os.path.join(COOKIE_DIR, f"{scope}_cookie")
 
 def save_cookie(cookie, domain, expire_time=3600):
+    """Save the cookie for the given domain with an optional expiration time (default is 3600 seconds)."""
