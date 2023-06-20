@@ -155,3 +155,6 @@ def save_cookie(cookie, domain, expire_time=3600):
     expire = int(time.time()) + expire_time
     cookie_file_path = get_cookie_file_path(scope)
 
+    with open(cookie_file_path, 'w+') as cookie_file:
+
+
