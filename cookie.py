@@ -132,4 +132,5 @@ import time
 from config import COOKIE_DIR
 from log import LOGGER
 
+__author__ = 'DESTHUbb'
 
