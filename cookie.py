@@ -167,4 +167,5 @@ def get_cookie(target_domain):
     if os.path.exists(cookie_file_path):
         with open(cookie_file_path, "r") as cookie_file:
             cookie_file_list = cookie_file.readlines()
+            expire = cookie_file_list[2]
 
