@@ -177,4 +177,5 @@ else:
 
 def try_cookie(domain):
     """Try to find a cookie for the given domain and prompt the user if they want to use it."""
+    cookie = get_cookie(domain)
 
