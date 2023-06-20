@@ -169,3 +169,5 @@ def get_cookie(target_domain):
             cookie_file_list = cookie_file.readlines()
             expire = cookie_file_list[2]
 
+            if int(time.time()) < int(expire):
+
