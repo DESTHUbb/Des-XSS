@@ -134,3 +134,5 @@ from log import LOGGER
 
 __author__ = 'DESTHUbb'
 
+def is_ip(domain):
+    """Check if the given domain is an IP address."""
