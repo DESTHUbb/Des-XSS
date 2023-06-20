@@ -172,3 +172,6 @@ def get_cookie(target_domain):
             if int(time.time()) < int(expire):
 else:
                 LOGGER.warn(f'Cookie of {scope} is expired!!!')
+              else:
+        return None
+
