@@ -160,4 +160,5 @@ def save_cookie(cookie, domain, expire_time=3600):
         cookie_file.write(scope + '\n')
         cookie_file.write(str(expire))
 
+def get_cookie(target_domain):
 
