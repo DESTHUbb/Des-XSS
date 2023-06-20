@@ -147,4 +147,5 @@ def domain_scope(target_domain):
 
 def get_cookie_file_path(scope):
     """Get the cookie file path for the specified domain scope."""
+    return os.path.join(COOKIE_DIR, f"{scope}_cookie")
 
