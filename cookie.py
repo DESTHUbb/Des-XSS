@@ -140,4 +140,6 @@ def is_ip(domain):
 
 def domain_scope(target_domain):
     """Get the domain scope from the target domain."""
-
+       if is_ip(target_domain):
+  return target_domain
+    else: 
