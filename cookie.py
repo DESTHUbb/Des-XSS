@@ -139,4 +139,5 @@ def is_ip(domain):
     return re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}', domain) is not None
 
 def domain_scope(target_domain):
+    """Get the domain scope from the target domain."""
 
