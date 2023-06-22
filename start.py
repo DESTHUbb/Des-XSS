@@ -266,6 +266,7 @@ if __name__ == "__main__":
 
 1: # I imported the check_url, check_install, save_cookie, save_cookie_ip and is_ip functions directly from their respective modules.
 
+2: # I removed the save_cookie function defined inside the main file, since it is imported from the cookie module.
 
 
 
