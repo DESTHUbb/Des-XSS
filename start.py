@@ -203,7 +203,8 @@ if __name__ == "__main__":
     if args.filter:
     filter = args.filter
 
-
+    browser = ''
+    if args.browser:
 
 
 
