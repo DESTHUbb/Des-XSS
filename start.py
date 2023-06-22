@@ -161,3 +161,6 @@ from util import save, gen_id, get_domain_from_url
 from banner import banner
 from check import check_url, check_install
 from cookie import save_cookie, save_cookie_ip, is_ip
+
+
+if __name__ == "__main__":
