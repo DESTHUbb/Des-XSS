@@ -173,5 +173,6 @@ if __name__ == "__main__":
     parser.add_argument('--burp', help='scan from *.xml from burpsuite proxy.')
     parser.add_argument('--process', type=int, help='process number.')
     parser.add_argument('-c', '--coroutine', type=int, help='coroutine number.')
+    parser.add_argument('--cookie', action='store', help='use cookie.')
 
 
