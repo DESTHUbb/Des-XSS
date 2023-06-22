@@ -226,6 +226,8 @@ if __name__ == "__main__":
         domain = get_domain_from_url(scope_url)
         if is_ip(scope_url):
             save_cookie_ip(args.cookie, domain)
+        else:
+            save_cookie(args.cookie, domain)
 
 
 
