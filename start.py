@@ -187,4 +187,7 @@ if __name__ == "__main__":
     url, file, burp = '', '', ''
     filter = False
     num = multiprocessing.cpu_count()
- 
+    coroutine = 200
+
+
+
