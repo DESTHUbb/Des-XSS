@@ -223,6 +223,7 @@ if __name__ == "__main__":
        elif url:
             scope_url = url
 
+        domain = get_domain_from_url(scope_url)
 
 
 
