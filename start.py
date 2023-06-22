@@ -240,6 +240,7 @@ if __name__ == "__main__":
 
         queue = Queue()
         result_queue = Queue()
+        target = "example.com"
 
 
 
