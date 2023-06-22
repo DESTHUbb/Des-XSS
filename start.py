@@ -197,6 +197,8 @@ if __name__ == "__main__":
     if args.file:
     file = args.file
 
+    if args.burp:
+    burp = args.burp
 
 
 
