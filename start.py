@@ -238,6 +238,9 @@ if __name__ == "__main__":
         else:
           task_id = gen_id()
 
+        queue = Queue()
+
+
 
 
 
