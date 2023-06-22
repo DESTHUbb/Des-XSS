@@ -149,8 +149,6 @@ import urllib.request
 import urllib.error
 import re
 import time
-import re
-import time
 import os
 import sys
 import argparse
