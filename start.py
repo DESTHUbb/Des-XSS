@@ -233,6 +233,7 @@ if __name__ == "__main__":
         if args.id:
            task_id = args.id
            if not Engine.is_scanned(task_id):
+              LOGGER.error('Task %s not found, exit.' % task_id)
 
 
 
