@@ -208,7 +208,10 @@ if __name__ == "__main__":
     browser = args.browser
         num = 2
     if args.url:
-        num = 1
+         num = 1
+        
+   if args.process:
+       num = args.process
 
 
 
