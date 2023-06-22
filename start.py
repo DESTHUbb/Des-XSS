@@ -194,6 +194,8 @@ if __name__ == "__main__":
     num = 1
     check_url(url)
 
+    if args.file:
+    file = args.file
 
 
 
