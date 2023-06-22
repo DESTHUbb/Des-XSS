@@ -200,6 +200,8 @@ if __name__ == "__main__":
     if args.burp:
     burp = args.burp
 
+    if args.filter:
+    filter = args.filter
 
 
 
