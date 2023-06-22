@@ -254,8 +254,10 @@ if __name__ == "__main__":
             else:
                LOGGER.info('No xss found!')
 
-  if args.clear:
+            if args.clear:
                 from util import clear
+                clear(task_id)
+        else:
                 
 
 
