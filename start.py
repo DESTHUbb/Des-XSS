@@ -268,6 +268,7 @@ if __name__ == "__main__":
 
 2: # I removed the save_cookie function defined inside the main file, since it is imported from the cookie module.
 
+3: # I replaced cpu_count() with multiprocessing.cpu_count() to get the number of CPU cores.
 
 
 
