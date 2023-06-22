@@ -220,7 +220,8 @@ if __name__ == "__main__":
      if file:
          with open(file) as f:
                 scope_url = f.readline().strip()
-
+       elif url:
+            scope_url = url
 
 
 
