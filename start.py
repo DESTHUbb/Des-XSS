@@ -229,6 +229,8 @@ if __name__ == "__main__":
         else:
             save_cookie(args.cookie, domain)
 
+    if url or file or burp or args.id or args.filter:
+
 
 
 
