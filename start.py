@@ -185,4 +185,6 @@ if __name__ == "__main__":
         check_install()
         
     url, file, burp = '', '', ''
+    filter = False
+    num = multiprocessing.cpu_count()
  
