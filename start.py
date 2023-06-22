@@ -231,7 +231,7 @@ if __name__ == "__main__":
 
     if url or file or burp or args.id or args.filter:
         if args.id:
-
+           task_id = args.id
 
 
 
