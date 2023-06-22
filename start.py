@@ -258,6 +258,8 @@ if __name__ == "__main__":
                 from util import clear
                 clear(task_id)
         else:
+           LOGGER.error('error: missing a mandatory option (--url, --file, --burp, --id)!')
+
                 
 
 
