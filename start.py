@@ -181,3 +181,5 @@ if __name__ == "__main__":
     banner()
     args = parser.parse_args()
 
+    if args.check:
+        check_install()
