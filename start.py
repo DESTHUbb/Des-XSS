@@ -217,7 +217,7 @@ if __name__ == "__main__":
         coroutine = args.coroutine
 
    if args.cookie:
-       if file:
+     if file:
 
 
 
