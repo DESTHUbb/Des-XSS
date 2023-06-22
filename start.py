@@ -251,6 +251,10 @@ if __name__ == "__main__":
           else:
             if result:
                 save(result, task_id)
+          else:
+                LOGGER.info('No xss found!')
+
+                
 
 
 
