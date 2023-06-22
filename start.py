@@ -246,6 +246,8 @@ if __name__ == "__main__":
 
         try:
             result = engine.start()
+          except KeyboardInterrupt as e:
+
 
 
 
