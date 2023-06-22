@@ -249,7 +249,8 @@ if __name__ == "__main__":
           except KeyboardInterrupt as e:
             LOGGER.info(e)
           else:
-
+            if result:
+                save(result, task_id)
 
 
 
