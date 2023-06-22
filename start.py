@@ -165,5 +165,6 @@ from cookie import save_cookie, save_cookie_ip, is_ip
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="start.py", description='scan xss from url or file.', usage='start.py --url=url --save')
-        parser.add_argument('-v', '--version', action='version', version='V1.0-beta')
+    parser.add_argument('-v', '--version', action='version', version='V2.0-beta')
+    parser.add_argument('--check', action='store_true', help='check if browser is installed correctly.')
 
