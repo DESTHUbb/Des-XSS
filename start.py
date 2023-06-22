@@ -183,3 +183,6 @@ if __name__ == "__main__":
 
     if args.check:
         check_install()
+        
+  url, file, burp = '', '', ''
+ 
