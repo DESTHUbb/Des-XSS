@@ -188,7 +188,25 @@ if __name__ == "__main__":
     filter = False
     num = multiprocessing.cpu_count()
     coroutine = 200 
+    
     if args.url:
     url = args.url
+    num = 1
+    check_url(url)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
