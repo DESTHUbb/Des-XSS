@@ -242,6 +242,7 @@ if __name__ == "__main__":
         result_queue = Queue()
         target = "example.com"
 
+        engine = Engine(queue, result_queue, target, id=task_id, url=url, file=file, burp=burp, process=num, browser=browser, coroutine=coroutine, filter=filter)
 
 
 
