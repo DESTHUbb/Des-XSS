@@ -244,7 +244,8 @@ if __name__ == "__main__":
 
         engine = Engine(queue, result_queue, target, id=task_id, url=url, file=file, burp=burp, process=num, browser=browser, coroutine=coroutine, filter=filter)
 
-
+        try:
+            result = engine.start()
 
 
 
