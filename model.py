@@ -140,3 +140,5 @@ class HttpResponse:
     def get_header(self, header_name):
      try:
             return self.headers[header_name]
+                 except KeyError:
+
