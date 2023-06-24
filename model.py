@@ -169,4 +169,6 @@ class HttpResponse:
 """
         self.vul = vul
         self.method = method
+        self.url = url
+        self.headers = headers
 
