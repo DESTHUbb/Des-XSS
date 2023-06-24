@@ -185,3 +185,4 @@ if __name__ == '__main__':
 
 2: # Docstrings – Add docstrings to classes and functions to describe their purpose and how they are used.
 
+3: # Use f-strings: Instead of concatenating strings with the + operator, use f-strings to make your code more readable and maintainable.
