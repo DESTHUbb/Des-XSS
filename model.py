@@ -141,4 +141,5 @@ class HttpResponse:
      try:
             return self.headers[header_name]
                  except KeyError:
+            return self.headers.get(header_name.lower())
 
