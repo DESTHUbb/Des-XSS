@@ -134,5 +134,6 @@ class HttpResponse:
     def __init__(self, code, reason, headers, data):
         self.code = code
         self.reason = reason
+        self.headers = headers
 
     
