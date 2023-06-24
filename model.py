@@ -156,4 +156,7 @@ class HttpResponse:
 
  class Case:
            def __init__(self, vul, method, url, headers, body, args):
+        :param vul:
+        :param method:
+
 
