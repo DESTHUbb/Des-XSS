@@ -152,5 +152,6 @@ class HttpResponse:
         
     def __str__(self):
         headers_str = '\n'.join([f'{k}: {v}' for k, v in self.headers.items()])
+        return f'{self.code} {self.reason}\n{headers_str}\n{self.data}'
 
         
