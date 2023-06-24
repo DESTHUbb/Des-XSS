@@ -193,4 +193,5 @@ if __name__ == '__main__':
 
 6: # I removed the tostring and headers2print functions as they are not used and don't seem to be needed.
 
+7: # Combined the conditions in the get_header and change_header functions, and normalized the header names to lowercase.
 
