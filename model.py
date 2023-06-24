@@ -166,5 +166,7 @@ class HttpResponse:
         :param headers:
         :param body:
         :param args: (location,match)
-
+"""
+        self.vul = vul
+        self.method = method
 
