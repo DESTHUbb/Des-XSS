@@ -124,6 +124,7 @@ class HttpRequest:
         self.method = method
         self.url = url
         self.headers = headers
+        self.body = body
 
 
     
