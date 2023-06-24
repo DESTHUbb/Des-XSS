@@ -135,5 +135,6 @@ class HttpResponse:
         self.code = code
         self.reason = reason
         self.headers = headers
+        self.data = data
 
     
