@@ -164,5 +164,7 @@ class HttpResponse:
         :param method:
         :param url:
         :param headers:
+        :param body:
+        :param args: (location,match)
 
 
