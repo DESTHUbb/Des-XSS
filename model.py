@@ -183,4 +183,5 @@ if __name__ == '__main__':
 
 1: # PEP 8 – Follows the PEP 8 style conventions to make the code more readable and easy to understand.
 
+2: # Docstrings – Add docstrings to classes and functions to describe their purpose and how they are used.
 
