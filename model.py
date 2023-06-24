@@ -149,3 +149,7 @@ class HttpResponse:
             if resp_header_name.lower() == 'set-cookie':
                 setcookie_list.append(resp_header_value)
         return setcookie_list
+        
+    def __str__(self):
+
+        
