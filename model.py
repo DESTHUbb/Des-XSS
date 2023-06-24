@@ -137,4 +137,5 @@ class HttpResponse:
         self.headers = headers
         self.data = data
 
+    def get_header(self, header_name):
     
