@@ -162,6 +162,7 @@ class HttpResponse:
         
         :param vul:
         :param method:
-        
+        :param url:
+        :param headers:
 
 
