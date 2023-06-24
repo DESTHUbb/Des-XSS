@@ -191,5 +191,6 @@ if __name__ == '__main__':
 
 5: # Use try-except instead of if-in: Instead of checking if a key is in a dictionary, use a try-except block to handle the KeyError exception.
 
+6: # I removed the tostring and headers2print functions as they are not used and don't seem to be needed.
 
 
