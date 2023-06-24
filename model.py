@@ -126,5 +126,6 @@ class HttpRequest:
         self.headers = headers
         self.body = body
 
+    def __str__(self):
 
     
