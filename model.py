@@ -189,6 +189,7 @@ if __name__ == '__main__':
 
 4: # Use the snake_case naming convention for methods and variables.
 
+5: # Use try-except instead of if-in: Instead of checking if a key is in a dictionary, use a try-except block to handle the KeyError exception.
 
 
 
