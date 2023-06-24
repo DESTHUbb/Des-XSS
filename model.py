@@ -157,8 +157,9 @@ class HttpResponse:
  class Case:
            def __init__(self, vul, method, url, headers, body, args):
                
-        Case class is a object like test case,include http-util,verify function,url etc.
 """
+        Case class is a object like test case,include http-util,verify function,url etc.
+        
         :param vul:
         :param method:
         
