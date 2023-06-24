@@ -195,3 +195,4 @@ if __name__ == '__main__':
 
 7: # Combined the conditions in the get_header and change_header functions, and normalized the header names to lowercase.
 
+8: # I simplified the get_setcookie_list function using a list comprehension.
