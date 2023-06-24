@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
 import json
 
-
+class HttpRequest:
 
 
     
