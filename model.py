@@ -131,5 +131,6 @@ class HttpRequest:
         return f'{self.method} {self.url}\n{headers_str}\n{self.body}'
         
 class HttpResponse:
+    def __init__(self, code, reason, headers, data):
 
     
