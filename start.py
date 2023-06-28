@@ -44,6 +44,7 @@ if __name__ == "__main__":
     parser.add_argument('--cookie', action='store', help='use cookie.')
     parser.add_argument('--filter', action='store_true', help='filter urls when use --file.')
     parser.add_argument('--clear', action='store_true', help='delete traffic files after scan.')
+    parser.add_argument('--browser', action='store', help='scan with browser, is good at DOM-based xss but slow.')
 
 
 
