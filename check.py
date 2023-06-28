@@ -66,5 +66,6 @@ def check_browser_installation():
         driver = webdriver.Chrome()
         driver.quit()
         logging.info('Chrome is installed correctly.')      
+      except Exception as e:
 
 
