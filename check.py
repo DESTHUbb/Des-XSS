@@ -114,4 +114,5 @@ A continuación te presento algunas de las mejoras que hice al código:
 
 4: # I renamed the check_install() function to check_browser_installation() so that the name better reflects what the function does.
 
+5: # In the check_url() function, I changed the variable name br to driver to make it more descriptive. I also added a format string in the success log message to display the URL that was verified.
 
