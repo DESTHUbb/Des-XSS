@@ -64,6 +64,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def check_browser_installation():
     try:
         driver = webdriver.Chrome()
-        
+        driver.quit()
+        logging.info('Chrome is installed correctly.')      
 
 
