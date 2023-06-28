@@ -28,8 +28,8 @@ from banner import banner
 from check import check_browser_installation, check_url
 from cookie import save_cookie, save_cookie_ip, is_ip
 
-
-
+def check_install():
+    pass
 
 
 
