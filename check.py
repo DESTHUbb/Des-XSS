@@ -112,5 +112,6 @@ A continuación te presento algunas de las mejoras que hice al código:
 
 3: # Modified the check_install() function so that it tests multiple browsers instead of just Chrome and PhantomJS. Also, I added an exception for each browser so the code doesn't stop if a browser installation fails.
 
+4: # I renamed the check_install() function to check_browser_installation() so that the name better reflects what the function does.
 
 
