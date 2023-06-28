@@ -109,3 +109,8 @@ A continuación te presento algunas de las mejoras que hice al código:
 1: # I added a __name__ == '__main__' declaration so that the code inside it is only executed when this module is called directly.
 
 2: # I used the logging library instead of a custom implementation. The logging library is more flexible and offers more options for controlling the output stream of logs.
+
+3: # Modified the check_install() function so that it tests multiple browsers instead of just Chrome and PhantomJS. Also, I added an exception for each browser so the code doesn't stop if a browser installation fails.
+
+
+
