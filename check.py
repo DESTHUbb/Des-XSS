@@ -65,11 +65,42 @@ def check_browser_installation():
     try:
         driver = webdriver.Chrome()
         driver.quit()
-        logging.info('Chrome is installed correctly.')      
-      except Exception as e:
- logging.warning(f'Chrome is not installed correctly: {str(e)}')
+        logging.info('Chrome is installed correctly.')
+    except Exception as e:
+        logging.warning(f'Chrome is not installed correctly: {str(e)}')
         try:
             driver = webdriver.Firefox()
             driver.quit()
             logging.info('Firefox is installed correctly.')
+        except Exception as e:
+            logging.warning(f'Firefox is not installed correctly: {str(e)}')
+            try:
+                driver = webdriver.Edge()
+                driver.quit()
+                logging.info('Edge is installed correctly.')
+            except Exception as e:
+                logging.warning(f'Edge is not installed correctly: {str(e)}')
+                try:
+                    driver = webdriver.Safari()
+                    driver.quit()
+                    logging.info('Safari is installed correctly.')
+                except Exception as e:
+                    logging.warning(f'Safari is not installed correctly: {str(e)}')
+                    logging.error('No browser is installed correctly!')
+                    exit(1)
+
+def check_url(url):
+    try:
+        urllib.request.urlopen(url, timeout=20)
+        logging.info(f'{url} is reachable.')
+    except Exception as e:
+        logging.warning(f'Check URL error: {str(e)}')
+        exit(1)
+
+if __name__ == '__main__':
+    check_browser_installation()
+    check_url('https://www.google.com/')
+A continuación te presento algunas de las mejoras que hice al código:
+
+
 
