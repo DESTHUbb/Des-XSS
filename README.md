@@ -50,7 +50,7 @@
 └── test.py
 ```
 # Screenshot 
-![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/78bb2017-e40d-43e1-8023-19f852a2400e)
+![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/6da0f4d8-599c-47e1-a29f-6acc6092ceab)
 
 # Environment
 Linux
