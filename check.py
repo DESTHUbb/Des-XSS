@@ -70,4 +70,6 @@ def check_browser_installation():
  logging.warning(f'Chrome is not installed correctly: {str(e)}')
         try:
             driver = webdriver.Firefox()
+            driver.quit()
+            logging.info('Firefox is installed correctly.')
 
