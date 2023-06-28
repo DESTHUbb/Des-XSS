@@ -108,3 +108,4 @@ A continuación te presento algunas de las mejoras que hice al código:
 
 1: # I added a __name__ == '__main__' declaration so that the code inside it is only executed when this module is called directly.
 
+2: # I used the logging library instead of a custom implementation. The logging library is more flexible and offers more options for controlling the output stream of logs.
