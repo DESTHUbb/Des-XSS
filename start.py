@@ -38,6 +38,7 @@ if __name__ == "__main__":
     parser.add_argument('--url', '-u', help='the target site of scan.')
     parser.add_argument('--id', action='store', help='rescan by task id.')
     parser.add_argument('-f', '--file', help='scan urls from text file.')
+    parser.add_argument('--burp', help='scan from *.xml from burpsuite proxy.')
 
 
 
