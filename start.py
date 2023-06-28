@@ -31,6 +31,8 @@ from cookie import save_cookie, save_cookie_ip, is_ip
 def check_install():
     pass
 
+if __name__ == "__main__":
+
 
 
 
