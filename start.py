@@ -36,6 +36,7 @@ if __name__ == "__main__":
     parser.add_argument('-v', '--version', action='version', version='V1.0-beta')
     parser.add_argument('--check', action='store_true', help='check if browser is installed correctly.')
     parser.add_argument('--url', '-u', help='the target site of scan.')
+    parser.add_argument('--id', action='store', help='rescan by task id.')
 
 
 
