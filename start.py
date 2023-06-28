@@ -32,6 +32,7 @@ def check_install():
     pass
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(prog="start.py", description='scan xss from url or file.', usage='start.py --url=url --save')
 
 
 
