@@ -67,5 +67,6 @@ def check_browser_installation():
         driver.quit()
         logging.info('Chrome is installed correctly.')      
       except Exception as e:
-
+ logging.warning(f'Chrome is not installed correctly: {str(e)}')
+        try:
 
