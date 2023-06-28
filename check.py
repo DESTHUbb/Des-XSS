@@ -59,6 +59,7 @@ import logging
 import urllib.request
 from selenium import webdriver
 
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 
