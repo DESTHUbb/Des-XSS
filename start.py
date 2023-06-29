@@ -116,7 +116,9 @@ LOGGER.error('Task %s not found, exit.' % task_id)
 
         engine = Engine(queue, result_queue, target, id=task_id, url=url, file=file, burp=burp, process=num, browser=browser, coroutine=coroutine, filter=filter)
 
-
+ try:
+            result = engine.start()
+        except KeyboardInterrupt as e:
 
 
 
