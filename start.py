@@ -121,7 +121,9 @@ LOGGER.error('Task %s not found, exit.' % task_id)
         except KeyboardInterrupt as e:
   LOGGER.info(e)
         else:
-
+   if result:
+                save(result, task_id)
+            else:
 
 
 
