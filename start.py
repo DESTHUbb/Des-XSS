@@ -105,7 +105,8 @@ if __name__ == "__main__":
   task_id = args.id
             if not Engine.is_scanned(task_id):
 
-
+LOGGER.error('Task %s not found, exit.' % task_id)
+                exit(0)
 
 
 
