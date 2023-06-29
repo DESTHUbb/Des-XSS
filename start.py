@@ -74,6 +74,9 @@ if __name__ == "__main__":
      browser = ''
     if args.browser:
         browser = args.browser
+            num = 2
+        if args.url:
+            num = 1
 
 
 
