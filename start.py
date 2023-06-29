@@ -78,6 +78,8 @@ if __name__ == "__main__":
         if args.url:
             num = 1
 
+    if args.process:
+        num = args.process
 
 
 
