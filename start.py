@@ -52,7 +52,9 @@ if __name__ == "__main__":
     if args.check:
         check_install()
     url, file, burp = '', '', ''
-
+    filter = False
+    num = multiprocessing.cpu_count()
+    coroutine = 200
 
 
 
