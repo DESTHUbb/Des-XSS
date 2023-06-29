@@ -124,6 +124,7 @@ LOGGER.error('Task %s not found, exit.' % task_id)
    if result:
                 save(result, task_id)
             else:
+                LOGGER.info('No xss found!')
 
 
 
