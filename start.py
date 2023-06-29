@@ -119,7 +119,8 @@ LOGGER.error('Task %s not found, exit.' % task_id)
  try:
             result = engine.start()
         except KeyboardInterrupt as e:
-
+  LOGGER.info(e)
+        else:
 
 
 
