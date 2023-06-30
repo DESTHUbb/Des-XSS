@@ -1053,7 +1053,7 @@ class Engine:
 
     def is_scanned(task_id):
         # Code to check if the task_id has already been scanned
-        return False
+        return False # change this to return True if the task_id has already been scanned
         
 
     def start(self):
