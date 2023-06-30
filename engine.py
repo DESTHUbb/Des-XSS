@@ -1052,6 +1052,9 @@ class Engine:
         self.put_queue = self.put_queue()  # inicializa el método put_queue
 
     def is_scanned(task_id):
+        # Code to check if the task_id has already been scanned
+        return False
+        
 
     def start(self):
         try:
