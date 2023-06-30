@@ -1051,6 +1051,8 @@ class Engine:
         self.kwargs = kwargs
         self.put_queue = self.put_queue()  # inicializa el método put_queue
 
+    def is_scanned(task_id):
+
     def start(self):
         try:
             self.put_queue()
