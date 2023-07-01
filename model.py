@@ -143,6 +143,7 @@ class HttpResponse:
             return self.headers.get(header_name.lower())
 
     def get_setcookie_list(self):
+        setcookie_list = []
 
 
 
