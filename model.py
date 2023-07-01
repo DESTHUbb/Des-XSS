@@ -149,6 +149,7 @@ class HttpResponse:
                 setcookie_list.append(resp_header_value)
         return setcookie_list
 
+    def __str__(self):
 
 
             
