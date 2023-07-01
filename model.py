@@ -146,6 +146,7 @@ class HttpResponse:
         setcookie_list = []
         for resp_header_name, resp_header_value in self.headers.items():
             if resp_header_name.lower() == 'set-cookie':
+                setcookie_list.append(resp_header_value)
 
 
 
