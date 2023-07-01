@@ -154,6 +154,7 @@ class HttpResponse:
         return f'{self.code} {self.reason}\n{headers_str}\n{self.data}'
 
 class Case:
+    def __init__(self, vul, method, url, headers, body, args):
 
             
 
