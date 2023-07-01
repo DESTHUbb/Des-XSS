@@ -144,6 +144,7 @@ class HttpResponse:
 
     def get_setcookie_list(self):
         setcookie_list = []
+        for resp_header_name, resp_header_value in self.headers.items():
 
 
 
