@@ -156,7 +156,18 @@ class HttpResponse:
 class Case:
     def __init__(self, vul, method, url, headers, body, args):
 
-            
+    """
+    Represents an HTTP test case.
+    """
+    def __init__(self, vul, method, url, headers, body, args):
+        """
+        :param vul:
+        :param method:
+        :param url:
+        :param headers:
+        :param body:
+        :param args: (location,match)
+        """
 
 
 
