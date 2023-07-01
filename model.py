@@ -138,6 +138,10 @@ class HttpResponse:
         self.data = data
      def get_header(self, header_name):
         try:
+            return self.headers[header_name]
+            
+
+
 
             
 
