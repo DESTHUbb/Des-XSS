@@ -150,6 +150,7 @@ class HttpResponse:
         return setcookie_list
 
     def __str__(self):
+        headers_str = '\n'.join([f'{k}: {v}' for k, v in self.headers.items()])
 
 
             
