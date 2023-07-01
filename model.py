@@ -120,7 +120,7 @@ if __name__ == '__main__':
 import json
 
 class HttpRequest:
- 
+     def __init__(self, method, url, headers, body=''):
 
 
 
