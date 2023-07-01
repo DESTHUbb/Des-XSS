@@ -168,6 +168,12 @@ class Case:
         :param body:
         :param args: (location,match)
         """
+        self.vul = vul
+        self.method = method
+        self.url = url
+        self.headers = headers
+        self.body = body
+        self.args = args
 
 
 
