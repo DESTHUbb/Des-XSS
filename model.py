@@ -121,6 +121,7 @@ import json
 
 class HttpRequest:
      def __init__(self, method, url, headers, body=''):
+        self.method = method
 
 
 
