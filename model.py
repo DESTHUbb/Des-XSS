@@ -142,6 +142,7 @@ class HttpResponse:
         except KeyError:
             return self.headers.get(header_name.lower())
 
+    def get_setcookie_list(self):
 
 
 
