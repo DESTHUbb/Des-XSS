@@ -132,6 +132,7 @@ class HttpRequest:
 
 class HttpResponse:
      def __init__(self, code, reason, headers, data):
+        self.code = code
 
 
 
