@@ -109,7 +109,7 @@ LOGGER.error('Task %s not found, exit.' % task_id)
 exit(0)
     if result:
         print_result(result)
-      else:
+    else:
 LOGGER.error('No vulnerabilities found.')
 
         task_id = gen_id()
