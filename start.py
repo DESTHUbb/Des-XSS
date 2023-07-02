@@ -106,7 +106,8 @@ if __name__ == "__main__":
     while not Engine.is_scanned (task_id):
     time.sleep(1)
 LOGGER.error('Task %s not found, exit.' % task_id)
-    exit(0)
+exit(0)
+    if result:
       else:
             task_id = gen_id()
 
