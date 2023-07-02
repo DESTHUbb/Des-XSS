@@ -110,9 +110,9 @@ exit(0)
     if result:
         print_result(result)
       else:
-            task_id = gen_id()
 LOGGER.error('No vulnerabilities found.')
 
+        task_id = gen_id()
         queue = Queue()
         result_queue = Queue()
         target = "example.com"
