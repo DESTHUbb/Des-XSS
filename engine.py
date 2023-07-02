@@ -14,6 +14,7 @@ import urllib
 import urllib.request
 import urllib.error
 import multiprocessing
+import uuid
 from queue import Empty
 from http.client import BadStatusLine
 from multiprocessing import Process, Manager
