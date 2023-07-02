@@ -104,10 +104,9 @@ if __name__ == "__main__":
               task_id = args.id
             task_id = Engine.is_add_task(url)
     while not Engine.is_scanned (task_id):
-LOGGER.error('Task %s not found, exit.' % task_id)
     time.sleep(1)
-
-                exit(0)
+LOGGER.error('Task %s not found, exit.' % task_id)
+    exit(0)
       else:
             task_id = gen_id()
 
