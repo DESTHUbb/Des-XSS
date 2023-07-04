@@ -51,11 +51,10 @@ if __name__ == "__main__":
     
 def check_install():
     if args.check:
-
-    url, file, burp = '', '', ''
-    filter = False
-    num = multiprocessing.cpu_count()
-    coroutine = 200
+       url, file, burp = '', '', ''
+       filter = False
+       num = multiprocessing.cpu_count()
+       coroutine = 200
 
     if args.url:
         url = args.url
