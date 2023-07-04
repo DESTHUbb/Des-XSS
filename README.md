@@ -52,8 +52,6 @@
 # Screenshot 
 ### -url
 ![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/6da0f4d8-599c-47e1-a29f-6acc6092ceab)
-### -id
-![image](https://github.com/DESTHUbb/Des-XSS/assets/90658763/f501ca40-3a7c-4b5c-bcb5-4d763c6c8d5a)
 
 # Environment
 Linux
