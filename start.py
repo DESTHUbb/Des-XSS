@@ -52,10 +52,6 @@ if __name__ == "__main__":
 def check_install():
     if args.check:
 
-    
-    if args.check:
-        check_install()
-        
     url, file, burp = '', '', ''
     filter = False
     num = multiprocessing.cpu_count()
