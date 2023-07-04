@@ -50,6 +50,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
 def check_install():
+    if args.check:
 
     
     if args.check:
