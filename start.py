@@ -48,7 +48,10 @@ if __name__ == "__main__":
     parser.add_argument('--save', action='store_true', help='save result to json file.')
     banner()
     args = parser.parse_args()
+    
+def check_install():
 
+    
     if args.check:
         check_install()
         
