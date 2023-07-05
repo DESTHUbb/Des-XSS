@@ -98,7 +98,7 @@ def check_install():
         else:
             save_cookie(args.cookie, domain)
 
-    if url or file or burp or args.id or args.filter:
+    if 'url' or file or burp or args.id or args.filter:
         if args.id:
               task_id = args.id
             task_id = Engine.is_add_task(url)
