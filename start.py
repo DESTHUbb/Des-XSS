@@ -105,11 +105,12 @@ def check_install():
     while not Engine.is_scanned (task_id):
     time.sleep(1)
 LOGGER.error('Task %s not found, exit.' % task_id)
-exit(0)
     if result:
         print_result(result)
     else:
 LOGGER.error('No vulnerabilities found.')
+LOGGER.error('No valid arguments provided.')
+exit(0)
 
         task_id = gen_id()
         queue = Queue()
