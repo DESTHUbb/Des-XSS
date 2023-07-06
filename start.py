@@ -101,7 +101,7 @@ def check_install():
     if 'url' or file or burp or args.id or args.filter:
         if args.id:
               task_id = args.id
-            task_id = Engine.is_add_task(url)
+            task_id = Engine.is_add_task('url')
     while not Engine.is_scanned (task_id):
     time.sleep(1)
 LOGGER.error('Task %s not found, exit.' % task_id)
