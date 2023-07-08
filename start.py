@@ -103,7 +103,7 @@ def check_install():
               task_id = args.id
             task_id = Engine.is_add_task('url')
     while not Engine.is_scanned (task_id):
-    time.sleep(1)
+    time.sleep(0.01)
 LOGGER.error('Task %s not found, exit.' % task_id)
     if result:
         print_result(result)
