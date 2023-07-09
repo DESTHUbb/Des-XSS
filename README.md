@@ -124,3 +124,7 @@ Some xss is difficult to scan.Des-XSS will save some files in traffic/ for analy
 + *.error(some error happened such as timeout,connection reset,etc.)
 + *.multipart(when request is multupart-formed,not easy to scan)
 # Samples:
+
+# Used libraries:
+
+
