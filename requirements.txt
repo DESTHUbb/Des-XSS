@@ -7,3 +7,4 @@ requests==2.31.0
 pyyaml==6.0
 uuid==3.7.
 urllib==3.11.4.
+queue==3.7
