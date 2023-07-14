@@ -9,3 +9,4 @@ uuid==3.7.
 urllib==3.11.4.
 queue==3.7
 logging==3.9
+re==3.11.
