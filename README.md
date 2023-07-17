@@ -1,9 +1,10 @@
 # 𝔻𝕖𝕤-𝕏𝕊𝕊
 ![Des-xss](https://github.com/DESTHUbb/Des-XSS/assets/90658763/5a62d599-2905-47aa-aa81-cae3ce7894cc)
 
-![found](https://img.shields.io/badge/found-200%2B%20xss-red) [![issues](https://img.shields.io/github/issues/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/issues) ![](https://img.shields.io/badge/MainLanguage-Python-blue?style=flat-square) [![Python](https://img.shields.io/badge/Python-%E2%89%A5%203.6-yellow.svg)](https://www.python.org/) <img src="https://img.shields.io/badge/Developed%20on-Ubuntu-blueviolet">
+![found](https://img.shields.io/badge/found-200%2B%20xss-red) [![issues](https://img.shields.io/github/issues/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/issues) ![](https://img.shields.io/badge/MainLanguage-Python-blue?style=flat-square) ![PyPI - Support Python Versions](https://img.shields.io/pypi/pyversions/litestar?labelColor=202235&color=edb641&logo=python&logoColor=edb641) <img src="https://img.shields.io/badge/Developed%20on-Ubuntu-blueviolet">
  [![release](https://img.shields.io/badge/release-v2.0--beta-blue)](https://github.com/ESTHUbb/Des-XSS/releases) [![license](https://img.shields.io/github/license/DESTHUbb/Des-XSS)](https://github.com/DESTHUbb/Des-XSS/blob/master/LICENSE)
 
+                                                                                                                                         
 ## Des-XSS is a quick tool that scans millions of URLs for cross-site scripting vulnerabilities. It has found XSS vulnerabilities in bug bounty programs.
 
 ## I'm still working on improving the program¡¡
