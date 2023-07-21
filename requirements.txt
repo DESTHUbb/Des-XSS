@@ -7,9 +7,9 @@ requests==2.31.0
 pyyaml==6.0
 uuid==3.7.
 urllib==3.11.4.
+argparse==3.11.
 queue==3.7
 logging==3.9
 re==3.11.
 banner==0.2.0
 time==3.11
-argparse==3.2.
