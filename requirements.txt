@@ -14,3 +14,4 @@ re==3.11.
 banner==0.2.0
 time==3.11
 http.client==3.9
+signal==3.9
