@@ -127,6 +127,9 @@ Some xss is difficult to scan.Des-XSS will save some files in traffic/ for analy
 + *.multipart(when request is multupart-formed,not easy to scan)
 # Samples:
 
+# Roadmap:
+
+
 # Used libraries:
 
 
